@@ -18,278 +18,301 @@
 <body>
 	<header class="header" id="header">
 		<div class="container">
-			<div class="topbar">
-				<img src="images/logo.png" alt="" class="logo">
+			<div class="header-topbar">
+				<img src="images/logo.png" alt="" class="header__logo">
 				<nav class="navbar">
-					<ul>
-						<li><a href="#header">HOME</a></li>
-						<li><a href="#meet-our-team">ABOUT</a></li>
-						<li><a href="#our-portfolio">WORK</a></li>
-						<li><a href="#">BLOG</a></li>
-						<li><a href="#get-in-touch">CONTACT</a></li>
+					<ul class="menu d-flex">
+						<li class="menu__item">
+							<a class="menu__link" href="#header">HOME</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#meet-our-team">ABOUT</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#our-portfolio">WORK</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">BLOG</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#get-in-touch">CONTACT</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
-			<h1 class="header-title">Hi there! We are the new kids on the block<br /> and we build awesome websites and mobile apps.</h1>
+			<h1 class="header__title">Hi there! We are the new kids on the block<br class="header__title-divisor" /> and we build awesome websites and mobile apps.</h1>
 			<a href="#" class="btn btn-header">WORK WITH US!</a>
 		</div>
 	</header>
-	<section id="services-we-provide">
+	<section class="services-we-provide" id="services-we-provide">
 		<div class="container">
-			<h2 class="section-title">SERVICES WE PROVIDE</h2>
-			<p class="services-subtitle">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
-			<div class="services">
-				<div class="service">
-					<img src="images/flag.png" alt="">
-					<h3 class="service-title">BRANDING</h3>
-					<p class="service-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+			<h2 class="section-title services-we-provide__section-title">SERVICES WE PROVIDE</h2>
+			<p class="services-we-provide__subtitle">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+			<div class="services d-flex">
+				<div class="services__item">
+					<img src="images/flag.png" alt="" class="services__img">
+					<h3 class="services__title">BRANDING</h3>
+					<p class="services__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
 				</div>
-				<div class="service">
-					<img src="images/pencil.png" alt="">
-					<h3 class="service-title">DESIGN</h3>
-					<p class="service-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+				<div class="services__item">
+					<img src="images/pencil.png" alt="" class="services__img">
+					<h3 class="services__title">DESIGN</h3>
+					<p class="services__content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
 				</div>
-				<div class="service">
-					<img src="images/settings.png" alt="">
-					<h3 class="service-title">DEVELOPMENT</h3>
-					<p class="service-content">At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+				<div class="services__item">
+					<img src="images/settings.png" alt="" class="services__img">
+					<h3 class="services__title">DEVELOPMENT</h3>
+					<p class="services__content">At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
 				</div>
-				<div class="service">
-					<img src="images/rocket.png" alt="">
-					<h3 class="service-title">ROCKET SCIENCE</h3>
-					<p class="service-content">Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+				<div class="services__item">
+					<img src="images/rocket.png" alt="" class="services__img">
+					<h3 class="services__title">ROCKET SCIENCE</h3>
+					<p class="services__content">Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="meet-our-team">
+	<section class="meet-our-team" id="meet-our-team">
 		<div class="container">
-			<h2 class="section-title">MEET OUR BEAUTIFUL TEAM</h2>
-			<p class="meet-subtitle">We are a small team of designers and developers, who help brands with big ideas</p>
+			<h2 class="section-title meet-our-team__section-title">MEET OUR BEAUTIFUL TEAM</h2>
+			<p class="meet-our-team__subtitle">We are a small team of designers and developers, who help brands with big ideas</p>
 			<div class="team">
-				<div class="team-member">
-					<div class="team-member-face"></div>
-					<h3 class="team-member-name">ANNE HATHAWAY</h3>
-					<p class="team-position">CEO / Marketing Guru</p>
-					<p class="team-member-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-					<div class="society">
-						<div class="society-icon">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
+				<div class="team__member">
+					<div class="team__member-face"></div>
+					<h3 class="team__member-name">ANNE HATHAWAY</h3>
+					<p class="team__position">CEO / Marketing Guru</p>
+					<p class="team__member-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+					<div class="team__society">
+						<div class="team__society-block-icon">
+							<i class="fa fa-facebook team__society-icon" aria-hidden="true"></i>
 						</div>
-						<div class="society-icon">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
+						<div class="team__society-block-icon">
+							<i class="fa fa-twitter team__society-icon" aria-hidden="true"></i>
 						</div>
-						<div class="society-icon">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<div class="team__society-block-icon">
+							<i class="fa fa-linkedin team__society-icon" aria-hidden="true"></i>
 						</div>
-						<div class="society-icon">
-							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-						</div>
-					</div>
-				</div>
-				<div class="team-member">
-					<div class="team-member-face"></div>
-					<h3 class="team-member-name">KATE UPTON</h3>
-					<p class="team-position">Creative Director</p>
-					<p class="team-member-description">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
-					<div class="society">
-						<div class="society-icon">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</div>
-						<div class="society-icon">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</div>
-						<div class="society-icon">
-							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<div class="team__society-block-icon">
+							<i class="fa fa-envelope-o team__society-icon" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
-				<div class="team-member">
-					<div class="team-member-face"></div>
-					<h3 class="team-member-name">OLIVIA WILDE</h3>
-					<p class="team-position">Lead Designer</p>
-					<p class="team-member-description">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
-					<div class="society">
-						<div class="society-icon">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
+				<div class="team__member">
+					<div class="team__member-face"></div>
+					<h3 class="team__member-name">KATE UPTON</h3>
+					<p class="team__position">Creative Director</p>
+					<p class="team__member-description">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+					<div class="team__society">
+						<div class="team__society-block-icon">
+							<i class="fa fa-twitter team__society-icon" aria-hidden="true"></i>
 						</div>
-						<div class="society-icon">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
+						<div class="team__society-block-icon">
+							<i class="fa fa-linkedin team__society-icon" aria-hidden="true"></i>
 						</div>
-						<div class="society-icon">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</div>
-						<div class="society-icon">
-							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<div class="team__society-block-icon">
+							<i class="fa fa-envelope-o team__society-icon" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
-				<div class="team-member">
-					<div class="team-member-face"></div>
-					<h3 class="team-member-name">ASHLEY GREENE</h3>
-					<p class="team-position">SEO / Developer</p>
-					<p class="team-member-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-					<div class="society">
-						<div class="society-icon">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
+				<div class="team__member">
+					<div class="team__member-face"></div>
+					<h3 class="team__member-name">OLIVIA WILDE</h3>
+					<p class="team__position">Lead Designer</p>
+					<p class="team__member-description">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+					<div class="team__society">
+						<div class="team__society-block-icon">
+							<i class="fa fa-facebook team__society-icon" aria-hidden="true"></i>
 						</div>
-						<div class="society-icon">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
+						<div class="team__society-block-icon">
+							<i class="fa fa-twitter team__society-icon" aria-hidden="true"></i>
 						</div>
-						<div class="society-icon">
-							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<div class="team__society-block-icon">
+							<i class="fa fa-linkedin team__society-icon" aria-hidden="true"></i>
+						</div>
+						<div class="team__society-block-icon">
+							<i class="fa fa-envelope-o team__society-icon" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="team__member">
+					<div class="team__member-face"></div>
+					<h3 class="team__member-name">ASHLEY GREENE</h3>
+					<p class="team__position">SEO / Developer</p>
+					<p class="team__member-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="team__society">
+						<div class="team__society-block-icon">
+							<i class="fa fa-facebook team__society-icon" aria-hidden="true"></i>
+						</div>
+						<div class="team__society-block-icon">
+							<i class="fa fa-twitter team__society-icon" aria-hidden="true"></i>
+						</div>
+						<div class="team__society-block-icon">
+							<i class="fa fa-envelope-o team__society-icon" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="we-got-skills">
+	<section class="we-got-skills" id="we-got-skills">
 		<div class="container">
-			<h2 class="section-title">WE GOT SKILLS</h2>
-			<p class="we-got-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<div class="boxes">
-				<div class="box">
-					<div class="progress-circle">
-						<svg viewbox="0 0 160 160">
+			<h2 class="section-title we-got-skills__section-title">WE GOT SKILLS</h2>
+			<p class="we-got-skills__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<div class="boxes d-flex">
+				<div class="boxes__item d-flex">
+					<div class="boxes__progress-circle">
+						<svg class="boxes__svg" viewbox="0 0 160 160">
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#dfe8ed" fill="none"></circle>
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#30bae7" fill="none" stroke-dasharray="412.7931 458.659"></circle>
 						</svg>
-						<h5>90<span class="sign-percent">%</span></h5>
+						<h5 class="boxes__percent">
+							90<span class="boxes__sign-percent">%</span>
+						</h5>
 					</div>
 					<h3>WEB DESIGN</h3>	
 				</div>
-				<div class="box">
-					<div class="progress-circle">
-						<svg viewbox="0 0 160 160">
+				<div class="boxes__item d-flex">
+					<div class="boxes__progress-circle">
+						<svg class="boxes__svg" viewbox="0 0 160 160">
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#dfe8ed" fill="none"></circle>
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#d74680" fill="none" stroke-dasharray="343.99425 458.659"></circle>
 						</svg>
-						<h5>75<span class="sign-percent">%</span></h5>
+						<h5 class="boxes__percent">
+							75<span class="boxes__sign-percent">%</span>
+						</h5>
 					</div>
-					<h3>HTML / CSS</h3>	
+					<h3 class="boxes__title">HTML / CSS</h3>	
 				</div>		
-				<div class="box">
-					<div class="progress-circle">
-						<svg viewbox="0 0 160 160">
+				<div class="boxes__item d-flex">
+					<div class="boxes__progress-circle">
+						<svg class="boxes__svg" viewbox="0 0 160 160">
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#dfe8ed" fill="none"></circle>
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#15c7a8" fill="none" stroke-dasharray="321.0613 458.659"></circle>
 						</svg>
-						<h5>70<span class="sign-percent">%</span></h5>
+						<h5 class="boxes__percent">
+							70<span class="boxes__sign-percent">%</span>
+						</h5>
 					</div>
-					<h3>GRAPHIC DESIGN</h3>	
+					<h3 class="boxes__title">GRAPHIC DESIGN</h3>	
 				</div>
-				<div class="box">
-					<div class="progress-circle">
-						<svg viewbox="0 0 160 160">
+				<div class="boxes__item d-flex">
+					<div class="boxes__progress-circle">
+						<svg class="boxes__svg" viewbox="0 0 160 160">
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#dfe8ed" fill="none"></circle>
 							<circle r="73" cx="80" cy="80" stroke-width="14"
 								stroke="#eb7d4b" fill="none" stroke-dasharray="389.86015 458.659"></circle>
 						</svg>
-						<h5>85<span class="sign-percent">%</span></h5>
+						<h5 class="boxes__percent">
+							85<span class="boxes__sign-percent">%</span>
+						</h5>
 					</div>
-					<h3>UI / UX</h3>	
+					<h3 class="boxes__title">UI / UX</h3>	
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="our-portfolio">
+	<section class="our-portfolio" id="our-portfolio">
 		<div class="container">
-			<h2 class="section-title">OUR PORTFOLIO</h2>
-			<p class="our-portfolio-subtitle">Neque porro quisquam est, qui dolorem ipsum quia dolor sit ametconsectetur, adipisci velit, sed quia non numquam</p>
-			<div class="tab-buttons">
-				<a href="#" class="tab-button active">ALL</a>
-				<a href="#" class="tab-button">WEB</a>
-				<a href="#" class="tab-button">APPS</a>
-				<a href="#" class="tab-button">ICONS</a>
+			<h2 class="section-title our-portfolio__section-title">OUR PORTFOLIO</h2>
+			<p class="our-portfolio__subtitle">Neque porro quisquam est, qui dolorem ipsum quia dolor sit ametconsectetur, adipisci velit, sed quia non numquam</p>
+			<div class="tab-buttons d-flex">
+				<a href="#" class="tab-buttons__item tab-buttons__item_active">ALL</a>
+				<a href="#" class="tab-buttons__item">WEB</a>
+				<a href="#" class="tab-buttons__item">APPS</a>
+				<a href="#" class="tab-buttons__item">ICONS</a>
 			</div>
 			<div class="examples">
-				<div class="example">
-					<img src="images/isometric_perspective.png" alt="">
-					<h3>Isometric Perspective Mock-Up</h3>
+				<div class="examples__item">
+					<img src="images/isometric_perspective.png" alt="" class="examples__img">
+					<h3 class="examples__title">Isometric Perspective Mock-Up</h3>
 				</div>
-				<div class="example">
-					<img src="images/time_zone.png" alt="">
-					<h3>Time Zone App UI</h3>
+				<div class="examples__item">
+					<img src="images/time_zone.png" alt="" class="examples__img">
+					<h3 class="examples__title">Time Zone App UI</h3>
 				</div>
-				<div class="example">
-					<img src="images/viro_media.png" alt="">
-					<h3>Viro Media Players UI</h3>
+				<div class="examples__item">
+					<img src="images/viro_media.png" alt="" class="examples__img">
+					<h3 class="examples__title">Viro Media Players UI</h3>
 				</div>
-				<div class="example">
-					<img src="images/blog_magazine.png" alt="">
-					<h3>Blog / Magazine Flat UI Kit</h3>
+				<div class="examples__item">
+					<img src="images/blog_magazine.png" alt="" class="examples__img">
+					<h3 class="examples__title">Blog / Magazine Flat UI Kit</h3>
 				</div>
 			</div>
 			<a href="#" class="btn btn-portfolio">LOAD MORE PROJECTS</a>
 		</div>
 	</section>
-	<section id="what-people-say">
+	<section class="what-people-say" id="what-people-say">
 		<div class="container">
-			<h2 class="section-title">WHAT POEPLE SAY ABOUT US</h2>	
-			<p class="what-people-subtitle">Our clients love us!</p>
+			<h2 class="section-title what-people-say__section-title">WHAT POEPLE SAY ABOUT US</h2>	
+			<p class="what-people-say__subtitle">Our clients love us!</p>
 			<div class="peoples">
-				<div class="people">
-					<div class="face-people"></div>
-					<div class="people-description">
-						<p class="text-content">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
-						<p class="people-name">CHANEL IMAN</p>
-						<p class="people-position">CEO of Pinterest</p>
+				<div class="peoples__person d-flex">
+					<div class="peoples__face-person"></div>
+					<div class="peoples__person-description">
+						<p class="peoples__text-content">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+						<p class="peoples__person-name">CHANEL IMAN</p>
+						<p class="peoples__person-position">CEO of Pinterest</p>
 					</div>	
 				</div>
-				<div class="people">
-					<div class="face-people"></div>
-					<div class="people-description">
-						<p class="text-content">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
-						<p class="people-name">ABRIANA LIMA</p>
-						<p class="people-position">Founder of Instagram</p>
+				<div class="peoples__person d-flex">
+					<div class="peoples__face-person"></div>
+					<div class="peoples__person-description">
+						<p class="peoples__text-content">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+						<p class="peoples__person-name">ABRIANA LIMA</p>
+						<p class="peoples__person-position">Founder of Instagram</p>
 					</div>	
 				</div>
-				<div class="people">
-					<div class="face-people"></div>
-					<div class="people-description">
-						<p class="text-content">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
-						<p class="people-name">ANNE HATHAWAY</p>
-						<p class="people-position">Lead Designer at Behance</p>
+				<div class="peoples__person d-flex">
+					<div class="peoples__face-person"></div>
+					<div class="peoples__person-description">
+						<p class="peoples__text-content">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+						<p class="peoples__person-name">ANNE HATHAWAY</p>
+						<p class="peoples__person-position">Lead Designer at Behance</p>
 					</div>	
 				</div>
-				<div class="people">
-					<div class="face-people"></div>
-					<div class="people-description">
-						<p class="text-content">“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
-						<p class="people-name">EMMA STONE</p>
-						<p class="people-position">Co-Founder of Shazam</p>
+				<div class="peoples__person d-flex">
+					<div class="peoples__face-person"></div>
+					<div class="peoples__person-description">
+						<p class="peoples__text-content">“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+						<p class="peoples__person-name">EMMA STONE</p>
+						<p class="peoples__person-position">Co-Founder of Shazam</p>
 					</div>	
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="get-in-touch">
+	<section class="get-in-touch" id="get-in-touch">
 		<div class="container">
-			<h1 class="section-title">GET IN TOUCH</h1>
-			<p class="get-in-touch-subtitle">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
-			<form action="#" class="form">
-				<div class="contacts">
-					<label class="field" for="#">
-						<p class="placeholder">Your Name<span>*</span></p>
-						<input type="text" name="name" id="name">	
+			<h1 class="section-title get-in-touch__section-title">GET IN TOUCH</h1>
+			<p class="get-in-touch__subtitle">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+			<form action="#" class="form d-flex">
+				<div class="form__contacts">
+					<label class="form__field form__contact-field" for="#">
+						<p class="form__placeholder">
+							Your Name<span class="form__asterisk">*</span>
+						</p>
+						<input type="text" name="name" id="name" class="form__input">	
 					</label>
-					<label class="field" for="#">
-						<p class="placeholder">Your Email<span>*</span></p>
-						<input type="email" name="email" id="email">	
+					<label class="form__field form__contact-field" for="#">
+						<p class="form__placeholder">
+							Your Email<span class="form__asterisk">*</span>
+						</p>
+						<input type="email" name="email" id="email" class="form__input">	
 					</label>
-					
 				</div>  
-				<label class="field" for="#">
-					<p class="placeholder">Your Message<span>*</span></p>
-					<textarea name="message" id="message"></textarea>	
+				<label class="form__field form__textarea-field" for="#">
+					<p class="form__placeholder form__textarea-placeholder">
+						Your Message<span class="form__asterisk">*</span>
+					</p>
+					<textarea name="message" id="message" class="form__textarea"></textarea>	
 				</label>
 			</form>
 			<a href="#" class="btn btn-send">SEND MESSAGE</a>
@@ -298,13 +321,27 @@
 	<footer class="footer" id="footer">
 		<div class="container">
 			<ul class="society-list">
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Google+</a></li>
-				<li><a href="#">LinkedIn</a></li>
-				<li><a href="#">Behance</a></li>
-				<li><a href="#">Dribbble</a></li>
-				<li><a href="#">Github</a></li>
+				<li class="society-list__item">
+					<a class="society-list__link" href="#">Facebook</a>
+				</li>
+				<li class="society-list__item">
+					<a class="society-list__link" href="#">Twitter</a>
+				</li>
+				<li class="society-list__item">
+					<a class="society-list__link" href="#">Google+</a>
+				</li>
+				<li class="society-list__item">
+					<a class="society-list__link" href="#">LinkedIn</a>
+				</li>
+				<li class="society-list__item">
+					<a class="society-list__link" href="#">Behance</a>
+				</li>
+				<li class="society-list__item">
+					<a class="society-list__link" href="#">Dribbble</a>
+				</li>
+				<li class="society-list__item">
+					<a class="society-list__link" href="#">Github</a>
+				</li>
 			</ul>
 		</div>
 	</footer>
