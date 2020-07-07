@@ -1,3 +1,5 @@
+/* Specification */
+
 body {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 18px;
@@ -35,41 +37,62 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	box-sizing: border-box;
 }
 
-
-/* ===== CONTAINER DEFAULT ===== */
-
 .container {
 	width: 960px;
 	margin: 0 auto;
 }
 
-/* ===== END CONTAINER DEFAULT ===== */
+.d-flex {
+	display: flex;
+}
 
+.btn {
+	display: block;
+	position: relative;
+	color: #fff;
+}
 
-/* ====== HEADER ===== */
+.section-title {
+	font-size: 40px;
+	color: #fff;
+	letter-spacing: 4px;
+	text-align: center;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.section-title::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 45%;
+	bottom: 0;
+	width: 10%;
+	height: 4px;
+	background-color: #000;
+	opacity: 0.15;
+}
+
+/* Header */
 
 .header {
 	padding: 54px 0 140px 0;
 	background-color: #87509c;
 }
 
-.topbar {
+.header-topbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.topbar .logo {
+.header__logo {
 	display: inline-block;
 	width: 117px;
 	height: 37px;
 }
 
-.navbar > ul {
-	display: flex;
-}
-
-.navbar > ul a {
+.menu__link {
 	display: inline-block;
 	color: #fff;
 	font-size: 16px;
@@ -79,21 +102,15 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	border-radius: 3px;
 }
 
-.navbar > ul a:hover {
+.menu__link:hover {
 	background-color: #643a79;
 }
 
-.header-title {
+.header__title {
 	color: #f7f3ea;
 	font-size: 42px;
 	margin: 126px 0 48px 0;
 	text-align: center;
-}
-
-.btn {
-	display: block;
-	position: relative;
-	color: #fff;
 }
 
 .btn::after {
@@ -121,71 +138,42 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	background-color: #e57441;
 }
 
+/* Section "Service we provide" */
 
-/* ===== END HEADER ===== */
-
-
-/* ===== SERVICE WE PROVIDE ====== */
-
-#services-we-provide {
+.services-we-provide {
 	padding: 110px 0 115px 0;
 	background-color: #17c2a4;
 }
 
-
 .services {
-	display: flex;
 	justify-content: space-between;
 }
 
-.section-title {
-	font-size: 40px;
-	color: #fff;
-	letter-spacing: 4px;
-	text-align: center;
-	padding-bottom: 10px;
-	position: relative;
-}
-
-.section-title::after {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 45%;
-	bottom: 0;
-	width: 10%;
-	height: 4px;
-	background-color: #000;
-	opacity: 0.15;
-}
-
-.services-subtitle {
+.services-we-provide__subtitle {
 	color: #fff;
 	width: 603px;
 	margin: 25px auto 70px auto;
 	text-align: center;
 }
 
-
- 
-.service {
+.services__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.service img {
+.services__img {
 	display: inline-block;
 	height: 130px;
 }
 
-.service-title {
+.services__title {
 	margin: 50px 0 auto 0;
 	font-size: 24px;
 	color: #fff;
 }
 
-.service-content {
+.services__content {
 	font-size: 16px;
 	font-weight: 300;
 	color: #fff;	
@@ -193,28 +181,25 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	line-height: 24px;
 }
 
-/* ===== END SERVICE WE PROVIDE ====== */
+/* Section "Meet our team"  */
 
-
-/* ===== MEET OUR TEAM ===== */
-
-#meet-our-team {
+.meet-our-team {
 	padding: 110px 0 120px 0;
 	background-color: #e7f1f8;
 }
 
-#meet-our-team .section-title {
+.meet-our-team__section-title {
 	color: #3c4761;
 	font-size: 41px;
 }
 
-#meet-our-team .section-title::after {
+.meet-our-team__section-title::after {
 	height: 6px;
 	background-color: #bdd1df;
 	opacity: 0.75;
 }
 
-.meet-subtitle {
+.meet-our-team__subtitle {
 	font-size: 19px;
 	color: #3c4761;
 	text-align: center;
@@ -226,39 +211,38 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	justify-content: space-between;
 }
 
-.team-member {
+.team__member {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.team-member-face {
+.team__member-face {
 	width: 200px;
 	height: 200px;
 	background-color: #878787;
 	border-radius: 50%;
 }
 
-.team-member-name {
+.team__member-name {
 	font-size: 24px;
 	color: #3c4761;
 	margin: 30px 0 0 0;
 	padding-bottom: 0;
 }
 
-.team-member:first-of-type .team-member-name {
+.team__member:first-of-type .team__member-name {
 	color: #27283d;
 }
 
-
-.team-position {
+.team__position {
 	padding-top: 0;
 	font-size: 16px;
 	color: #30bae7;
 	margin-bottom: 15px;
 }
 
-.team-member-description {
+.team__member-description {
 	width: 200px;
 	text-align: center;
 	color: #3c4761;
@@ -267,12 +251,12 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	margin-bottom: 26px;
 }
 
-.society {
+.team__society {
 	display: flex;
 	justify-content: center;
 }
 
-.society-icon {
+.team__society-block-icon {
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
@@ -281,62 +265,57 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	margin-right: 10px;
 }
 
-.society-icon:last-of-type {
+.team__society-block-icon:last-of-type {
 	margin-right: 0;
 }
 
-.society-icon > i {
+.team__society-icon {
 	color: #fff;
 	line-height: 32px;
 }
 
-/* ==== END MEET OUR TEAM ===== */
+/* Section "We got skills" */
 
-
-/* ===== WE GOT SKILLS ===== */
-
-#we-got-skills {
+.we-got-skills {
 	padding: 110px 0 113px 0;
 }
 
-#we-got-skills .section-title {
+.we-got-skills__section-title {
 	color: #3c4761;
 }
 
-#we-got-skills .section-title::after {
+.we-got-skills__section-title::after {
 	opacity: 1;
 	background-color: #dfe8ed;
 }
 
-.we-got-subtitle {
+.we-got-skills__subtitle {
 	margin: 20px auto 75px auto;
 	width: 658px;
 	text-align: center;
 }
 
 .boxes {
-	display: flex;
 	justify-content: space-between;
 }
 
-.box {
-	display: flex;
+.boxes__item {
 	flex-direction: column;
 	align-items: center;
 }
 
-.progress-circle > svg {
+.boxes__svg {
 	width: 160px;
 	height: 160px;
 	transform: rotate(-90deg);
 }
 
-.progress-circle {
+.boxes__progress-circle {
 	position: relative;
 	margin-bottom: 13px;
 }
 
-.progress-circle > h5 {
+.boxes__percent {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -348,44 +327,39 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	font-weight: 300;
 }
 
-.progress-circle > h5 > span {
+.boxes__sign-percent {
 	font-size: 32px;
 	font-weight: 300;
 }
 
+/* Section "Our portfolio" */
 
-/* ==== END WE GOT SKILLS ==== */
-
-
-/* ===== OUR PORTFOLIO ===== */
-
-#our-portfolio {
+.our-portfolio {
 	padding: 115px 0 110px 0;
 	background-color: #ffdd99;
 }
 
-#our-portfolio .section-title {
+.our-portfolio__section-title {
 	color: #393939;
 }
 
-#our-portfolio .section-title::after {
+.our-portfolio__section-title::after {
 	opacity: 1;
 	background-color: #e5c37f;
 }
 
-.our-portfolio-subtitle {
+.our-portfolio__subtitle {
 	margin: 13px auto 35px auto;
 	width: 515px;
 	text-align: center;
 }
 
 .tab-buttons {
-	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
 }
 
-.tab-button {
+.tab-buttons__item {
 	display: inline-block;
 	background-color: #ebcb8d;
 	border-radius: 4px;
@@ -396,11 +370,11 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	line-height: 38px;
 }
 
-.tab-button:last-of-type {
+.tab-buttons__item:last-of-type {
 	margin-right: 0;
 }
 
-.tab-button.active {
+.tab-buttons__item_active {
 	background-color: #fff;	
 }
 
@@ -411,18 +385,18 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	justify-content: space-between;
 }
 
-.example {
+.examples__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.example img {
+.examples__img {
 	display: inline-block;
 	width: 470px;
 }
 
-.example h3 {
+.examples__title {
 	font-size: 18px;
 	font-weight: 400;
 	color: #393939;
@@ -445,26 +419,17 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	background-color: #13b89b;
 }
 
-/* ===== END OUR PORTFOLIO ===== */
+/* Section: "What people say about us"  */
 
-/* ===== WHAT PEOPLE SAY ABOUT US */
-
-#what-people-say {
+.what-people-say {
 	padding: 108px 0 120px 0;
 	background-color: #d74680;
 }
 
-.what-people-subtitle {
+.what-people-say__subtitle {
 	color: #fff;
 	text-align: center;
 	margin: 18px 0 58px 0;
-}
-
-.face-people {
-	width: 96px;
-	height: 96px;
-	background-color: #787878;
-	border-radius: 50%;
 }
 
 .peoples {
@@ -474,32 +439,38 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	grid-row-gap: 130px;
 }
 
-.people {
-	display: flex;
+.peoples__person {
 	justify-content: space-between;
 }
 
-.people-description {
+.peoples__face-person {
+	width: 96px;
+	height: 96px;
+	background-color: #787878;
+	border-radius: 50%;
+}
+
+.peoples__person-description {
 	display: flex;
 	flex-direction: column;
 	width: 75%;
 }
 
-.people .text-content {
+.peoples__text-content {
 	width: 310px;
 	font-size: 21px;
 	color: #fff;
 	font-style: italic;
 }
 
-.people:nth-child(1) .text-content {
+.peoples__person:nth-child(1) .peoples__text-content {
 	width: 337px;
 }
-.people:nth-child(4) .text-content {
+.peoples__person:nth-child(4) .peoples__text-content {
 	width: 390px;
 }
 
-.people-name {
+.peoples__person-name {
 	font-size: 24px;
 	font-weight: 700;
 	margin: 17px 0 0 0;
@@ -507,53 +478,49 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	color: #fff;
 }
 
-.people-position {
+.peoples__person-position {
 	color: #ffdd99;
 }
 
+/* Section "Get in touch" */
 
-/* ===== END WHAT PEOPLE SAY ABOUT US */
-
-/* ===== GET IN TOUCH ===== */
-
-#get-in-touch {
+.get-in-touch {
 	background-color: #3c5499;
 	padding: 106px 0;
 }
 
-#get-in-touch .section-title::after {
+.get-in-touch__section-title::after {
 	opacity: 1;
 	background-color: #273a71;
 }
 
-.get-in-touch-subtitle {
+.get-in-touch__subtitle {
 	color: #fff;
 	margin: 16px 0 70px 0;
 	text-align: center;
 }
 
 .form {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
 }
 
-.contacts {
+.form__contacts {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 22px;
 }
 
-.contacts input, #message {
+.form__input,
+.form__textarea {
 	background-color: #273a71;
 }
 
-.contacts .field:nth-child(1) input {
+.form__contact-field:nth-child(1) .form__input {
 	margin-right: 35px;
 }
 
-.form #message {
+.form__textarea {
 	display: inline-block;
 	width: 100%;
 	height: 200px;
@@ -563,7 +530,7 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	border: none;
 }
 
-.contacts input {
+.form__input {
 	display: inline-block;
 	width: 414px;
 	height: 56px;
@@ -574,12 +541,12 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	font-size: 18px;
 }
 
-.form .field {
+.form__field {
 	display: inline-block;
 	position: relative;
 }
 
-.form .placeholder {
+.form__placeholder {
 	position: absolute;
 	left: 18px;
 	top: 50%;
@@ -587,16 +554,16 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	color: #fff;
 }
 
-.contacts + .field {
+.form__textarea-field {
 	width: 863px;
 }
 
-.contacts + .field > .placeholder {
+.form__textarea-placeholder {
 	top: 20px;
 	transform: translateY(0%);
 }
 
-.form .placeholder span {
+.form__asterisk {
 	color: #ff4444;
 	font-size: 16px;
 }
@@ -614,11 +581,9 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	background-color: #13b89b;
 }
 
-/* ===== END GET IN TOUCH ======*/
+/* Footer */
 
-/* ==== FOOTER ===== */
-
-#footer {
+.footer {
 	background-color: #344b8e;
 	padding: 40px 0 38px 0;
 }
@@ -628,36 +593,32 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 	justify-content: center;
 }
 
-.society-list li {
+.society-list__item {
 	margin: 0 40px 0 0;
 }
 
-.society-list li:last-child {
+.society-list__item:last-child {
 	margin-right: 0;
 }
 
-.society-list li > a {
+.society-list__link {
 	color: #fff;
 	font-size: 24px;
 	font-weight: 600;
 }
 
-.society-list li:hover > a {
+.society-list__item:hover > .society-list__link {
 	color: #30bae7;
 }
 
-
-/* ===== END FOOTER ===== */
-
-
-/* ===== RESPONSIVE DESIGN ===== */
+/* Responsive design */
 
 @media (max-width: 998px) {
 	.container {
 		width: 720px;
 	}
 
-	.header-title br {
+	.header__title-divisor {
 		display: none;
 	}
 
@@ -670,11 +631,13 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 		grid-row-gap: 37px;
 	}
 
-	.service-content {
+	.service__content {
 		width: 90%;
 	}
 
-	.services-subtitle, .we-got-subtitle, .our-portfolio-subtitle {
+	.services-we-provide__subtitle, 
+	.we-got-skills__subtitle, 
+	.our-portfolio__subtitle {
 		width: 100%;
 	}
 
@@ -689,26 +652,26 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 		grid-row-gap: 50px;
 	}
 
-	.form .contacts,
-	.form textarea,
-	.form input,
-	.form > .field {
+	.form__contacts,
+	.form__textarea,
+	.form__input,
+	.form__field {
 		width: 100%;
 	}
 
-	.form .contacts .field {
+	.form__contact-field {
 		width: 48%;
 	}
 
-	#footer {
+	.footer {
 		padding-bottom: 25px;
 	}
 
-	#footer .society-list {
+	.society-list {
 		flex-wrap: wrap;
 	}
 
-	#footer .society-list li {
+	.society-list__item {
 		margin-bottom: 13px;
 	}
 
@@ -719,7 +682,7 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 		width: 540px;
 	}
 
-	.header-title {
+	.header__title {
 		text-align: left;
 	}
 
@@ -733,19 +696,19 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 		width: 96%;
 	}
 
-	.topbar {
+	.header-topbar {
 		flex-direction: column;
 	}
 
-	.topbar .logo {
+	.header-topbar .logo {
 		margin-bottom: 17px;
 	}
 
-	.header-title {
+	.header__title {
 		margin-top: 100px;
 	}
 
-	.navbar > ul  {
+	.menu  {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -758,60 +721,60 @@ span, div, input, button, a, textarea, label, p, section, aside, nav, header, fo
 		grid-row-gap: 53px;
 	}
 
-	.service-title {
+	.services-we-provide__title {
 		margin-top: 20px;
 	}
 
-	.tab-buttons .tab-button {
+	.tab-buttons__item {
 		padding: 0 10px;
 	}
 
-	.example img {
+	.examples__img {
 		width: 99%;
 	}
 
-	#what-people-say .people p.text-content {
+
+	.peoples__person, .form__contacts {
 		width: 100%;
-	}
-
-	.people-description {
-		width: 90%;
-		align-items: center;
-	}
-
-	.people .text-content {
-		text-align: center;
-		margin-top: 30px;
-	}
-
-	.people-name {
-		margin-top: 10px;
-	}
-
-	.people, .form .contacts {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.form .contacts .field:first-child {
+	.peoples__person-description {
+		align-items: center;
+	}
+
+	.peoples__text-content {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.peoples__person:last-child .peoples__text-content {
+		width: 95%;
+	}
+
+	.peoples__person-name {
+		margin-top: 10px;
+	}
+
+	
+
+	.form__contact-field:first-child {
 		margin-bottom: 22px;
 	}
 
-	.form .contacts .field,
-	.form > .field {
+	.form__contact-field,
+	.form__field {
 		width: 90%;
 	}
 
-	#footer .society-list {
+	.society-list {
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-column-gap: 40px;
 	}
 
-	#footer .society-list li {
+	.society-list__item {
 		margin: 0 0 13px 0;
 	}
 }
-
-
-/* ===== END RESPONSIVE DESIGN ===== */
